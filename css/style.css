@@ -54,7 +54,7 @@ a {
   @media only screen and (max-width: 1000px) {
     .sidebar {
       position: absolute;
-      left: -15vw; } }
+      left: -20vw; } }
 
 .sidebar__titulo {
   color: #3a978d;
@@ -85,6 +85,14 @@ a {
 
 .sidebar__link {
   font-size: 1.6rem; }
+
+.icon-menu {
+  fill: #008073;
+  width: 4rem;
+  height: 4rem; }
+
+.icon-menu:hover {
+  left: 20vw; }
 
 .main {
   width: 85vw;
@@ -206,8 +214,7 @@ a {
 
 /*--------------------------*/
 .link-container:hover .side-color {
-  left: 0;
-  /* ahora estara dentro del contenedor */ }
+  left: 0; }
 
 .divider {
   display: flex;
@@ -378,14 +385,6 @@ a {
 
 .icon-educacion {
   fill: #fb9802; }
-
-.icon-menu {
-  fill: #008073;
-  width: 4rem;
-  height: 4rem; }
-
-.icon-menu:hover .sidebar {
-  left: 0; }
 
 /* EDUCACION SECTION*/
 .educacion-container {

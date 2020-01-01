@@ -11,7 +11,7 @@
     @media only screen and (max-width:$bp-largest){
         //display: none;
         position:absolute;
-        left:-15vw;
+        left:-20vw;
     }
 }
 
@@ -49,6 +49,16 @@
 
 .sidebar__link{
     font-size: 1.6rem;
+}
+
+.icon-menu{
+    fill:$color-primary;
+    width:4rem;
+    height: 4rem;
+}
+
+.icon-menu:hover {
+    left:20vw;
 }
 
 .main{
@@ -110,7 +120,6 @@
     display:flex;
     align-items: center;
     margin-left: 2rem;
-
 }
 
 .nav-titulo{
