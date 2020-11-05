@@ -1,0 +1,82 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.sidebar{
+    height: 100vh;
+    width: 15vw;
+    box-shadow: $shadow-light;
+}
+
+.sidebar__titulo{
+    color:#3a978d;
+    font-size: 3rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+
+.sidebar_subtitulo{
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.sidebar_header{
+    width:100%;
+    padding: 2rem;
+    border-bottom: 0.1px solid grey;
+    background-color: #FAFAFA;
+    color: $color-secundary;
+}
+
+.sidebar__links-container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    font-weight: 100;
+
+}
+
+.sidebar__link{
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+.main{
+    width:85vw;
+    height: 100vh;
+    overflow: auto;
+}
+
+.h1-primary{
+    color: $color-primary;
+    font-size: 3rem;
+    font-weight: 100;
+    padding:1.5rem 1.5rem 1rem 1.5rem;
+}
+
+.h3-primary-subtitle{
+    color:$color-secundary;
+    font-size:2rem;
+    padding-top: 1.5rem;
+}
+
+.p-card{
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding-left: 1.5rem;
+}
+
+.img-card{
+    width:6rem;
+    height:6rem;
+}
+
+.card_p{
+    font-size:2rem;
+    font-weight: 100;
+    padding: 1.5rem;
+}

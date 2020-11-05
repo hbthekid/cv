@@ -1,0 +1,128 @@
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/imgs/hero.jpg');
+    background-size: cover;
+    background-position: center bottom;
+}
+.hero__titulo{
+    font-size: 4rem;
+    padding: 5rem 0 0 6rem;
+}
+
+.link-container{
+    padding-bottom:2rem;
+}
+
+.divider{
+    width:100%;
+    background-color: $color-primary;
+    margin-bottom: 5rem;
+}
+
+.divider-titulo{
+    color: white;
+    font-size: 5rem;
+    font-weight: 100;
+    padding: 2rem;
+}
+
+.icon{
+    height:2.5rem;
+    width:2.5rem;
+    transform: translateY(2px);
+    //fill: white;
+}
+
+.card{
+    width:80rem;
+    background-color: white;
+    margin: 4rem auto;
+    box-shadow: $shadow-light;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.card__content{
+}
+.card__header{
+    padding:2rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dddddd;
+    margin: 0 1.5rem;
+}
+.card__footer{
+    background-color:$color-grey;
+    padding: 2rem;
+}
+
+.proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card-proyectos{
+    width:30rem;
+    height: 20rem;
+    box-shadow:$shadow-light;
+    margin-bottom: 5rem;
+}
+
+.card-proyectos__images{
+    object-fit: cover;
+    width:100%;
+    height: 60%;
+}
+
+.contact__icon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color:$color-secundary;
+}
+.icon--contact{
+    fill: white;
+    height:2.5rem;
+    width:2.5rem;
+}
+.contact-info{
+    padding-left:4rem;
+    padding-bottom:2rem;
+    display:flex;
+    align-items: center;
+    
+}
+
+.contact-link{
+    margin-left: 2rem;
+}
+
+.card__footer__p{
+    font-size:1.4rem;
+    color: #666666;
+}
+
+.card__div__tecnologia{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding:3rem;
+
+}
+.card__img__tecnolgia{
+    width: 10rem;
+    height:10rem;
+}
+.card__content_tecnolgia{
+    display: flex;
+}
+.card_p_tecnologia{
+    font-size:2rem;
+    font-weight: 300;
+}
