@@ -11,7 +11,13 @@
 }
 
 .link-container{
-    padding-bottom:2rem;
+    padding: 1.5rem;
+
+}
+
+.link-container:hover{
+    background-color: #FAFAFA;
+    padding-left: 2rem;
 }
 
 .divider{
@@ -31,7 +37,6 @@
     height:2.5rem;
     width:2.5rem;
     transform: translateY(2px);
-    //fill: white;
 }
 
 .card{
@@ -46,7 +51,8 @@
 .card__content{
 }
 .card__header{
-    padding:2rem;
+    padding-top:2rem;
+    padding-bottom: 2rem;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #dddddd;
@@ -59,15 +65,20 @@
 
 .proyectos{
     display: flex;
+    margin: 4rem auto;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    max-width: 80rem;
 }
 
 .card-proyectos{
     width:30rem;
-    height: 20rem;
+    height: 30rem;
     box-shadow:$shadow-light;
     margin-bottom: 5rem;
+    border-radius: 3px;
+    overflow: hidden;
+
 }
 
 .card-proyectos__images{
@@ -75,7 +86,8 @@
     width:100%;
     height: 60%;
 }
-
+.card-proyecto__content{
+}
 .contact__icon{
     display:flex;
     justify-content: center;
@@ -125,4 +137,33 @@
 .card_p_tecnologia{
     font-size:2rem;
     font-weight: 300;
+}
+
+.h1__card__h1_tecnologias{
+    color:$color-secundary;
+}
+.contact-link{
+    color: $color-primary;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* ICON COLORS */
+
+.icon-sobremi{
+    fill: $color-primary;
+}
+.icon-experiencia{
+    fill: #2bbcd5
+}
+
+.icon-proyectos{
+    fill:#3f51b5
+}
+.icon-tecnologias{
+    fill: #9c27b0
+}
+
+.icon-contacto{
+    fill:#795548
 }

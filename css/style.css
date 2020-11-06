@@ -28,6 +28,12 @@ cite {
   font-style: italic;
   font-weight: 100; }
 
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 300; }
+
 .container {
   width: 100vw;
   height: 100vh;
@@ -36,21 +42,23 @@ cite {
 .sidebar {
   height: 100vh;
   width: 15vw;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
 
 .sidebar__titulo {
   color: #3a978d;
-  font-size: 3rem;
-  font-weight: 100;
+  font-size: 3.1rem;
+  font-weight: 200;
   margin-bottom: 1rem; }
 
 .sidebar_subtitulo {
   font-size: 1.4rem;
-  font-weight: 300;
-  text-align: center; }
+  font-weight: 300; }
 
 .sidebar_header {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
   padding: 2rem;
   border-bottom: 0.1px solid grey;
   background-color: #FAFAFA;
@@ -60,7 +68,6 @@ cite {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 2rem;
   font-weight: 100; }
 
 .sidebar__link {
@@ -109,7 +116,11 @@ cite {
   padding: 5rem 0 0 6rem; }
 
 .link-container {
-  padding-bottom: 2rem; }
+  padding: 1.5rem; }
+
+.link-container:hover {
+  background-color: #FAFAFA;
+  padding-left: 2rem; }
 
 .divider {
   width: 100%;
@@ -131,12 +142,13 @@ cite {
   width: 80rem;
   background-color: white;
   margin: 4rem auto;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
   border-radius: 3px;
   overflow: hidden; }
 
 .card__header {
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #dddddd;
@@ -148,14 +160,18 @@ cite {
 
 .proyectos {
   display: flex;
+  margin: 4rem auto;
   flex-wrap: wrap;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  max-width: 80rem; }
 
 .card-proyectos {
   width: 30rem;
-  height: 20rem;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
-  margin-bottom: 5rem; }
+  height: 30rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  margin-bottom: 5rem;
+  border-radius: 3px;
+  overflow: hidden; }
 
 .card-proyectos__images {
   object-fit: cover;
@@ -206,3 +222,27 @@ cite {
 .card_p_tecnologia {
   font-size: 2rem;
   font-weight: 300; }
+
+.h1__card__h1_tecnologias {
+  color: #7A5648; }
+
+.contact-link {
+  color: #008073;
+  font-size: 1.5rem;
+  font-weight: 400; }
+
+/* ICON COLORS */
+.icon-sobremi {
+  fill: #008073; }
+
+.icon-experiencia {
+  fill: #2bbcd5; }
+
+.icon-proyectos {
+  fill: #3f51b5; }
+
+.icon-tecnologias {
+  fill: #9c27b0; }
+
+.icon-contacto {
+  fill: #795548; }

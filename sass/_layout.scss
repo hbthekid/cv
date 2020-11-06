@@ -12,20 +12,22 @@
 
 .sidebar__titulo{
     color:#3a978d;
-    font-size: 3rem;
-    font-weight: 100;
+    font-size: 3.1rem;
+    font-weight: 200;
     margin-bottom: 1rem;
 }
 
 .sidebar_subtitulo{
     font-size: 1.4rem;
     font-weight: 300;
-    text-align: center;
 }
 
 .sidebar_header{
     width:100%;
-    padding: 2rem;
+    display:flex;
+    flex-direction: column;
+    text-align: start;
+    padding:2rem;
     border-bottom: 0.1px solid grey;
     background-color: #FAFAFA;
     color: $color-secundary;
@@ -35,7 +37,6 @@
     width:100%;
     display: flex;
     flex-direction: column;
-    padding: 2rem;
     font-weight: 100;
 
 }
