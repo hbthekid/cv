@@ -42,7 +42,7 @@ a {
 .sidebar {
   height: 100vh;
   width: 15vw;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .sidebar__titulo {
   color: #3a978d;
@@ -52,7 +52,8 @@ a {
 
 .sidebar_subtitulo {
   font-size: 1.4rem;
-  font-weight: 300; }
+  font-weight: 300;
+  color: #7A5648; }
 
 .sidebar_header {
   width: 100%;
@@ -97,7 +98,8 @@ a {
 
 .img-card {
   width: 6rem;
-  height: 6rem; }
+  height: 6rem;
+  object-fit: contain; }
 
 .card_p {
   font-size: 2rem;
@@ -107,9 +109,10 @@ a {
 .hero {
   width: 100%;
   height: 100vh;
-  background-image: url("../assets/imgs/hero.jpg");
+  background-image: url("../assets/imgs/antakari-kike.jpeg");
   background-size: cover;
-  background-position: center bottom; }
+  background-position: center bottom;
+  object-fit: contain; }
 
 .hero__titulo {
   font-size: 4rem;
@@ -120,18 +123,22 @@ a {
 
 .link-container:hover {
   background-color: #FAFAFA;
-  padding-left: 2rem; }
+  padding-left: 2rem;
+  transition: all .3s; }
 
 .divider {
+  display: flex;
+  align-items: center;
   width: 100%;
+  height: 10.8rem;
   background-color: #008073;
   margin-bottom: 5rem; }
 
 .divider-titulo {
   color: white;
-  font-size: 5rem;
+  font-size: 4.3rem;
   font-weight: 100;
-  padding: 2rem; }
+  padding: 5rem; }
 
 .icon {
   height: 2.5rem;
@@ -142,7 +149,7 @@ a {
   width: 80rem;
   background-color: white;
   margin: 4rem auto;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   overflow: hidden; }
 
@@ -168,7 +175,7 @@ a {
 .card-proyectos {
   width: 30rem;
   height: 30rem;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   margin-bottom: 5rem;
   border-radius: 3px;
   overflow: hidden; }
@@ -177,6 +184,12 @@ a {
   object-fit: cover;
   width: 100%;
   height: 60%; }
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  max-width: 80rem;
+  margin: auto; }
 
 .contact__icon {
   display: flex;
@@ -193,7 +206,6 @@ a {
   width: 2.5rem; }
 
 .contact-info {
-  padding-left: 4rem;
   padding-bottom: 2rem;
   display: flex;
   align-items: center; }
@@ -214,7 +226,8 @@ a {
 
 .card__img__tecnolgia {
   width: 10rem;
-  height: 10rem; }
+  height: 10rem;
+  object-fit: contain; }
 
 .card__content_tecnolgia {
   display: flex; }
@@ -231,6 +244,18 @@ a {
   font-size: 1.5rem;
   font-weight: 400; }
 
+.contact-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #008073;
+  transition: width .3s; }
+
+.contact-link:hover::after {
+  width: 100%;
+  transition: width .3s; }
+
 /* ICON COLORS */
 .icon-sobremi {
   fill: #008073; }
@@ -246,3 +271,24 @@ a {
 
 .icon-contacto {
   fill: #795548; }
+
+/* EDUCACION SECTION*/
+.educacion-container {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 80rem;
+  margin: auto; }
+
+.card__educacion {
+  width: 40rem;
+  height: 20rem;
+  background-color: white;
+  margin-bottom: 4rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  overflow: hidden; }
+
+.card__educacion__h3 {
+  padding: 0.5rem 2rem 2rem 2rem; }
+
+/* ------- --------*/
