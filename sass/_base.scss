@@ -7,7 +7,10 @@
 }
 
 html{
-    font-size:10px
+    font-size:10px;
+    @media only screen and (max-width:$bp-large){
+        font-size: 8px;
+    }
 }
 
 body{
@@ -36,6 +39,12 @@ cite{
     font-size:2rem;
     font-style: italic;
     font-weight: 100;
+}
+
+li{
+    font-size: 1.6rem;
+    padding: 0 2rem 0 2rem;
+    font-weight: 300;
 }
 
 a{

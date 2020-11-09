@@ -8,6 +8,11 @@
     height: 100vh;
     width: 15vw;
     box-shadow: $shadow-light;
+    @media only screen and (max-width:$bp-largest){
+        //display: none;
+        position:absolute;
+        left:-15vw;
+    }
 }
 
 .sidebar__titulo{
@@ -44,13 +49,15 @@
 
 .sidebar__link{
     font-size: 1.6rem;
-    padding: 1rem;
 }
 
 .main{
     width:85vw;
     height: 100vh;
     overflow: auto;
+    @media only screen and (max-width:$bp-largest){
+        width:100vw;
+    }
 }
 
 .h1-primary{
@@ -83,3 +90,38 @@
     font-weight: 100;
     padding: 1.5rem;
 }
+.nav-fixed{
+    width:100vw;
+    height:8rem;
+    position: fixed;
+    flex-direction:row;
+    display: flex;
+    background-color: white;
+}
+
+.nav-titulo-container{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.div-nav-icon-container{
+    display:flex;
+    align-items: center;
+    margin-left: 2rem;
+
+}
+
+.nav-titulo{
+    font-size:2.2rem;
+    color:$color-primary;
+}
+
+.nav-subtitulo{
+    font-size:1.4rem;
+    font-weight: 200;
+    color:$color-secundary;   
+    text-align: center;
+}
+

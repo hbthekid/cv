@@ -9,6 +9,19 @@
 </head>
 
 <body>
+    <div class="nav-fixed">
+        <div class="div-nav-icon-container">
+            <svg class="icon-menu">
+                <use xlink:href="assets/icons/sprite.svg#icon-menu"></use>
+            </svg>
+        </div>
+        <div class="nav-titulo-container">
+            <div class="titulo-container">
+                <h1 class="nav-titulo">Enrique Carvajal</h1>
+                <h3 class="nav-subtitulo">Programador javascript</h3>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <aside class="sidebar">
             <div class="sidebar_header">
@@ -17,30 +30,42 @@
             </div>
             <div class="sidebar__links-container">
                 <div class="link-container">
+                    <div class="side-color side-color--sobremi"></div>
                     <svg class="icon icon-sobremi">
                         <use xlink:href="assets/icons/sprite.svg#icon-user"></use>
                     </svg>
                     <a href="#" class="sidebar__link">Sobre mí</a>
                 </div>
                 <div class="link-container">
+                    <div class="side-color side-color--experiencia"></div>
                     <svg class="icon icon-experiencia">
                         <use xlink:href="assets/icons/sprite.svg#icon-newspaper"></use>
                     </svg>
                     <a href="#" class="sidebar__link">Experiencia</a>
                 </div>
                 <div class="link-container">
+                    <div class="side-color side-color--educacion"></div>
+                    <svg class="icon icon-educacion">
+                        <use xlink:href="assets/icons/sprite.svg#icon-library"></use>
+                    </svg>
+                    <a href="#" class="sidebar__link">Educación</a>
+                </div>
+                <div class="link-container">
+                    <div class="side-color side-color--proyectos"></div>
                     <svg class="icon icon-proyectos">
                         <use xlink:href="assets/icons/sprite.svg#icon-stack"></use>
                     </svg>
                     <a href="#" class="sidebar__link">Proyectos</a>
                 </div>
                 <div class="link-container">
+                    <div class="side-color side-color--tecnologias"></div>
                     <svg class="icon icon-tecnologias">
                         <use xlink:href="assets/icons/sprite.svg#icon-rocket"></use>
                     </svg>
                     <a href="#" class="sidebar__link">Tecnologías</a>
                 </div>
                 <div class="link-container">
+                    <div class="side-color side-color--contacto"></div>
                     <svg class="icon icon-contacto">
                         <use xlink:href="assets/icons/sprite.svg#icon-mail2"></use>
                     </svg>
@@ -50,51 +75,79 @@
         </aside>
         <main class="main">
             <div class="hero">
-                <blockquote>Dichoso aquel a quien tambien su negocio resulta ser juguete y <br>que termina por
-                    entretenerse con él, deleitándose en lo que su <br>condición le impone como su deber.</blockquote>
-                <cite>GOETHE</cite>
+                <h1 class="h1-primary">Ruta Antakari</h1>
             </div>
             <div class="divider">
                 <h2 class="divider-titulo">SOBRE MÍ</h2>
             </div>
+            <div class="sobremi-container card-tecnologias-container">
+                <h1 class="h1__card__h1_tecnologias">PERFIL</h1>
+                <p class="p-sobremi">Desarrollador de aplicaciones web con más de 2 años de experiencia desarrollando
+                    con la biblioteca
+                    React. Debido a mi pasión por programar y desarrollar cada vez aplicaciones más complejas y
+                    desafiantes, tengo un gran interés en el continuo desarrollo personal y profesional, por lo mismo
+                    actualmente durante mis tiempos libres me encuentro aprendiendo Typescript para implementarlo con
+                    React. </p>
+
+                <h1 class="h1__card__h1_tecnologias">OBJETIVO</h1>
+                <p class="p-sobremi">Buscando dar el siguiente paso profesional con una organización respetada,
+                    desarrollando soluciones
+                    desafiantes e innovadoras, en un entorno agradable, de ritmo rápido y vanguardista que promueva el
+                    trabajo en equipo y la integridad, fomentando el desarrollo personal y profesional.</p>
+            </div>
             <div class="divider">
                 <h2 class="divider-titulo">EXPERIENCIA</h2>
             </div>
-            <div class="card">
-                <div class="card__header">
-                    <img class="img-card" src="assets/imgs/logoHospital.jpg">
-                    <h1 class="h1-primary">Hospital San Juan de Dios</h1>
-                    <p class="h3-primary-subtitle">Programador</p>
+            <section class="card-tecnologias-container">
+                <div class="card">
+                    <div class="card__header">
+                        <img class="img-card" src="assets/imgs/logoHospital.jpg">
+                        <h1 class="h1-primary">Hospital San Juan de Dios</h1>
+                        <p class="h3-primary-subtitle">Programador</p>
+                    </div>
+                    <div class="card__content">
+                        <p class="card_p"></p>
+                    </div>
+                    <div class="card__footer">
+                        <p class="card__footer__p">Abril-Mayo 2020</p>
+                    </div>
                 </div>
-                <div class="card__content">
-                    <p class="card_p"></p>
+                <div class="card">
+                    <div class="card__header">
+                        <img class="img-card" src="assets/imgs/logoHospital.jpg">
+                        <h1 class="h1-primary">Illini Group Chile SpA</h1>
+                        <p class="h3-primary-subtitle">Programador</p>
+                    </div>
+                    <div class="card__content">
+                        <p class="card_p"></p>
+                    </div>
+                    <div class="card__footer">
+                        <p class="card__footer__p">Octubre-Noviembre 2019</p>
+                    </div>
                 </div>
-                <div class="card__footer">
-                    <p class="card__footer__p">Abril-Mayo 2020</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card__header">
-                    <img class="img-card" src="assets/imgs/logoHospital.jpg">
-                    <h1 class="h1-primary">Illini Group Chile SpA</h1>
-                    <p class="h3-primary-subtitle">Programador</p>
-                </div>
-                <div class="card__content">
-                    <p class="card_p"></p>
-                </div>
-                <div class="card__footer">
-                    <p class="card__footer__p">Octubre-Noviembre 2019</p>
-                </div>
-            </div>
+            </section>
+
             <div class="divider">
                 <h2 class="divider-titulo">EDUCACIÓN</h2>
             </div>
-            <div class="educacion-container">
+            <div class="educacion-container card-tecnologias-container">
                 <div class="card__educacion">
                     <div class="card__educacion__content">
                     </div>
                     <h1 class="h1-primary">Universidad Tecnológica de Chile INACAP</h1>
                     <h3 class="sidebar_subtitulo card__educacion__h3">La Serena, Chile</h3>
+                    <ul>
+                        <li>Ingeniería en Informática</li>
+                    </ul>
+                </div>
+                <div class="card__educacion">
+                    <div class="card__educacion__content">
+                    </div>
+                    <h1 class="h1-primary">Universidad Tecnológica de Chile INACAP</h1>
+                    <h3 class="sidebar_subtitulo card__educacion__h3">La Serena, Chile</h3>
+                    <ul>
+                        <li>Ingeniería en Informática</li>
+                    </ul>
                 </div>
             </div>
             <div class="divider">
@@ -133,75 +186,78 @@
             <div class="divider">
                 <h2 class="divider-titulo">TECNOLOGÍAS</h2>
             </div>
-            <div class="card">
-                <div class="card__header">
-                    <h1 class="h1__card__h1_tecnologias">FRONT-END</h1>
-                </div>
-                <div class="card__content_tecnolgia">
-                    <div class="card__div__tecnologia">
-                        <img class="card__img__tecnolgia" src="https://andrewborstein.com/assets/img/react.png">
-                        <p class="card_p_tecnologia">React</p>
+            <section class="card-tecnologias-container">
+                <div class="card">
+                    <div class="card__header">
+                        <h1 class="h1__card__h1_tecnologias">FRONT-END</h1>
                     </div>
-                    <div class="card__div__tecnologia">
-                        <img class="card__img__tecnolgia" src="https://andrewborstein.com/assets/img/html5.png">
-                        <p class="card_p_tecnologia">HTML5</p>
-                    </div>
-                    <div class="card__div__tecnologia">
-                        <img class="card__img__tecnolgia" src="https://andrewborstein.com/assets/img/css3.png">
-                        <p class="card_p_tecnologia">CSS3</p>
-                    </div>
-                    <div class="card__div__tecnologia">
-                        <img class="card__img__tecnolgia"
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/220px-Nextjs-logo.svg.png">
-                        <p class="card_p_tecnologia">NextJS</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card__header">
-                    <h1 class="h1__card__h1_tecnologias">BACK-END</h1>
-                </div>
-                <div class="card__content_tecnolgia">
-                    <div class="card__div__tecnologia">
-                        <img class="card__img__tecnolgia"
-                            src="https://i2.wp.com/enekodelatorre.com/wp-content/uploads/2016/10/express-fondo-2.png?fit=800%2C516&ssl=1">
-                        <p class="card_p_tecnologia">Express</p>
-                    </div>
-                    <div class="card__div__tecnologia">
-                        <img class="card__img__tecnolgia" src="https://andrewborstein.com/assets/img/mongodb.png">
-                        <p class="card_p_tecnologia">Mongodb</p>
-                    </div>
-                    <div class="card__div__tecnologia">
-                        <img class="card__img__tecnolgia" src="https://andrewborstein.com/assets/img/nodejs.png">
-                        <p class="card_p_tecnologia">Nodejs</p>
-                    </div>
-                    <div class="card__div__tecnologia">
-                        <img class="card__img__tecnolgia"
-                            src="https://com-meteor-public-assets.s3.amazonaws.com/logo-black.png">
-                        <p class="card_p_tecnologia">Meteor</p>
+                    <div class="card__content_tecnolgia">
+                        <div class="card__div__tecnologia">
+                            <img class="card__img__tecnolgia" src="https://andrewborstein.com/assets/img/react.png">
+                            <p class="card_p_tecnologia">React</p>
+                        </div>
+                        <div class="card__div__tecnologia">
+                            <img class="card__img__tecnolgia" src="https://andrewborstein.com/assets/img/html5.png">
+                            <p class="card_p_tecnologia">HTML5</p>
+                        </div>
+                        <div class="card__div__tecnologia">
+                            <img class="card__img__tecnolgia" src="https://andrewborstein.com/assets/img/css3.png">
+                            <p class="card_p_tecnologia">CSS3</p>
+                        </div>
+                        <div class="card__div__tecnologia">
+                            <img class="card__img__tecnolgia"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/220px-Nextjs-logo.svg.png">
+                            <p class="card_p_tecnologia">NextJS</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card__header">
-                    <h1 class="h1__card__h1_tecnologias">WEB SCRAPING</h1>
-                </div>
-                <div class="card__content_tecnolgia">
-                    <div class="card__div__tecnologia">
-                        <img class="card__img__tecnolgia" src="https://pptr.dev/images/pptr.png">
-                        <p class="card_p_tecnologia">Puppeteer</p>
+                <div class="card">
+                    <div class="card__header">
+                        <h1 class="h1__card__h1_tecnologias">BACK-END</h1>
                     </div>
-                    <div class="card__div__tecnologia">
-                        <img class="card__img__tecnolgia"
-                            src="https://cdn-images-1.medium.com/max/694/1*DyhrTwtWSS0_3SmLd1yQrA@2x.png">
-                        <p class="card_p_tecnologia">Apify</p>
+                    <div class="card__content_tecnolgia">
+                        <div class="card__div__tecnologia">
+                            <img class="card__img__tecnolgia"
+                                src="https://i2.wp.com/enekodelatorre.com/wp-content/uploads/2016/10/express-fondo-2.png?fit=800%2C516&ssl=1">
+                            <p class="card_p_tecnologia">Express</p>
+                        </div>
+                        <div class="card__div__tecnologia">
+                            <img class="card__img__tecnolgia" src="https://andrewborstein.com/assets/img/mongodb.png">
+                            <p class="card_p_tecnologia">Mongodb</p>
+                        </div>
+                        <div class="card__div__tecnologia">
+                            <img class="card__img__tecnolgia" src="https://andrewborstein.com/assets/img/nodejs.png">
+                            <p class="card_p_tecnologia">Nodejs</p>
+                        </div>
+                        <div class="card__div__tecnologia">
+                            <img class="card__img__tecnolgia"
+                                src="https://com-meteor-public-assets.s3.amazonaws.com/logo-black.png">
+                            <p class="card_p_tecnologia">Meteor</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="card">
+                    <div class="card__header">
+                        <h1 class="h1__card__h1_tecnologias">WEB SCRAPING</h1>
+                    </div>
+                    <div class="card__content_tecnolgia">
+                        <div class="card__div__tecnologia">
+                            <img class="card__img__tecnolgia" src="https://pptr.dev/images/pptr.png">
+                            <p class="card_p_tecnologia">Puppeteer</p>
+                        </div>
+                        <div class="card__div__tecnologia">
+                            <img class="card__img__tecnolgia"
+                                src="https://cdn-images-1.medium.com/max/694/1*DyhrTwtWSS0_3SmLd1yQrA@2x.png">
+                            <p class="card_p_tecnologia">Apify</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <div class="divider">
                 <h2 class="divider-titulo">CONTACTO</h2>
             </div>
-            <div class="contact">
+            <div class="contact card-tecnologias-container">
                 <div class="contact-info">
                     <div class="contact__icon">
                         <svg class="icon--contact">

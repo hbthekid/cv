@@ -12,15 +12,60 @@
 }
 
 .link-container{
-    padding: 1.5rem;
+    height: 6rem;
+    display:flex;
+    padding:2rem;
+    align-items: center;
+    position: relative;
+    overflow:hidden;
+    
 
 }
 
 .link-container:hover{
     background-color: #FAFAFA;
-    padding-left: 2rem;
+    padding-left: 3rem;
     transition: all .3s;
 }
+
+/*--------------------------*/
+
+.side-color {
+    position: absolute; /* tiene postion absolute con respecto al contenedor  */
+    left: -20px; /* lo ocultamos, para posteriormente hacer el efecto */
+    height: 100%;
+    width: 10px;
+    transition: all .3s; /* animacion fluida */
+
+}
+.side-color--sobremi{
+    background-color:$color-primary;
+}
+.side-color--experiencia{
+    background-color:$color-experiencia;
+}
+.side-color--educacion{
+    background-color:$color-educacion;
+}
+
+.side-color--proyectos{
+    background-color:$color-proyectos;
+}
+
+.side-color--tecnologias{
+    background-color:$color-tecnologias;
+}
+
+.side-color--contacto{
+    background-color:$color-contacto;
+}
+
+/*--------------------------*/
+
+.link-container:hover .side-color{
+    left: 0; /* ahora estara dentro del contenedor */
+  }
+   
 
 .divider{
     display:flex;
@@ -41,7 +86,8 @@
 .icon{
     height:2.5rem;
     width:2.5rem;
-    transform: translateY(2px);
+    transform: translateY(-2px);
+    margin-right:1rem;
 }
 
 .card{
@@ -51,6 +97,18 @@
     box-shadow: $shadow-light;
     border-radius: 3px;
     overflow: hidden;
+    @media only screen and (max-width:$bp-medium){
+        width:60rem;
+    }
+    @media only screen and (max-width:$bp-small){
+        width:100%;
+    }
+}
+
+.card-tecnologias-container{
+    @media only screen and (max-width:$bp-small){
+        padding:0 4rem;
+    }
 }
 
 .card__content{
@@ -72,7 +130,7 @@
     display: flex;
     margin: 4rem auto;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     max-width: 80rem;
 }
 
@@ -83,6 +141,9 @@
     margin-bottom: 5rem;
     border-radius: 3px;
     overflow: hidden;
+    @media only screen and (max-width: $bp-small){
+        margin: 2rem;
+    }
 
 }
 
@@ -98,7 +159,8 @@
     display:flex;
     flex-direction: column;
     max-width:80rem;
-    margin:auto
+    margin:auto;
+    
 }
 
 .contact__icon{
@@ -143,9 +205,17 @@
     width: 10rem;
     height:10rem;
     object-fit: contain;
+    @media only screen and (max-width:$bp-medium){
+        width:8rem;
+        height: 8rem;
+        object-fit: contain;
+    }
 }
 .card__content_tecnolgia{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
 }
 .card_p_tecnologia{
     font-size:2rem;
@@ -188,26 +258,42 @@
     fill:#3f51b5
 }
 .icon-tecnologias{
-    fill: #9c27b0
+    fill: #9c27b0;
 }
 
 .icon-contacto{
     fill:#795548
 }
+.icon-educacion{
+    fill:#fb9802
+}
+
+.icon-menu{
+    fill:$color-primary;
+    width:4rem;
+    height: 4rem;
+}
+
+.icon-menu:hover .sidebar{
+    left:0;
+}
 
 /* EDUCACION SECTION*/
 
-
 .educacion-container{
     display:flex;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
     max-width: 80rem;
     margin:auto;
+    @media only screen and (max-width:$bp-medium){
+        justify-content: center;
+    }
 
 }
 
 .card__educacion{
-    width:40rem;
+    width:38rem;
     height:20rem;
     background-color: white;
     margin-bottom: 4rem;
@@ -222,3 +308,18 @@
 }
 
 /* ------- --------*/
+
+.p-sobremi{
+    font-size:2.5rem;
+    font-weight: 300;
+    padding: 3rem 2rem;
+    text-decoration: none solid rgb(51, 51, 51);
+    line-height: 4.3rem;
+}
+
+.sobremi-container{
+    max-width: 80rem;
+    display: flex;
+    margin: 4rem auto;
+    flex-direction: column;
+}
