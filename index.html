@@ -11,7 +11,7 @@
 <body>
     <div class="nav-fixed">
         <div class="div-nav-icon-container">
-            <svg class="icon-menu">
+            <svg class="icon-menu" onclick="openMenu()" id="iconMenu">
                 <use xlink:href="assets/icons/sprite.svg#icon-menu"></use>
             </svg>
         </div>
@@ -23,60 +23,61 @@
         </div>
     </div>
     <div class="container">
-        <aside class="sidebar">
+        <aside class="sidebar side-bar-close" id="sideBar">
             <div class="sidebar_header">
                 <h1 class="sidebar__titulo">Enrique Carvajal</h1>
                 <h3 class="sidebar_subtitulo">Programador Javascript</h3>
             </div>
             <div class="sidebar__links-container">
-                <div class="link-container">
+                <div class="link-container" onclick="handleScroll('sobremi')">
                     <div class="side-color side-color--sobremi"></div>
-                    <svg class="icon icon-sobremi">
+           º         <svg class="icon icon-sobremi">
                         <use xlink:href="assets/icons/sprite.svg#icon-user"></use>
                     </svg>
-                    <a href="#" class="sidebar__link">Sobre mí</a>
+                    <a  class="sidebar__link">Sobre mí</a>
                 </div>
-                <div class="link-container">
+                <div class="link-container" onclick="handleScroll('experiencia')">
                     <div class="side-color side-color--experiencia"></div>
                     <svg class="icon icon-experiencia">
                         <use xlink:href="assets/icons/sprite.svg#icon-newspaper"></use>
                     </svg>
-                    <a href="#" class="sidebar__link">Experiencia</a>
+                    <a class="sidebar__link">Experiencia</a>
                 </div>
-                <div class="link-container">
+                <div class="link-container" onclick="handleScroll('educacion')">
                     <div class="side-color side-color--educacion"></div>
                     <svg class="icon icon-educacion">
                         <use xlink:href="assets/icons/sprite.svg#icon-library"></use>
                     </svg>
-                    <a href="#" class="sidebar__link">Educación</a>
+                    <a href="#educacion" class="sidebar__link">Educación</a>
                 </div>
-                <div class="link-container">
+                <div class="link-container" onclick="handleScroll('proyectos')">
                     <div class="side-color side-color--proyectos"></div>
                     <svg class="icon icon-proyectos">
                         <use xlink:href="assets/icons/sprite.svg#icon-stack"></use>
                     </svg>
-                    <a href="#" class="sidebar__link">Proyectos</a>
+                    <a  class="sidebar__link">Proyectos</a>
                 </div>
-                <div class="link-container">
+                <div class="link-container" onclick="handleScroll('tecnologias')">
                     <div class="side-color side-color--tecnologias"></div>
                     <svg class="icon icon-tecnologias">
                         <use xlink:href="assets/icons/sprite.svg#icon-rocket"></use>
                     </svg>
-                    <a href="#" class="sidebar__link">Tecnologías</a>
+                    <a  class="sidebar__link">Tecnologías</a>
                 </div>
-                <div class="link-container">
+                <div class="link-container" onclick="handleScroll('contacto')">
                     <div class="side-color side-color--contacto"></div>
                     <svg class="icon icon-contacto">
                         <use xlink:href="assets/icons/sprite.svg#icon-mail2"></use>
                     </svg>
-                    <a href="#" class="sidebar__link">Contacto</a>
+                    <a  class="sidebar__link">Contacto</a>
                 </div>
             </div>
         </aside>
         <main class="main">
             <div class="hero">
+                <h1 class="">Ruta Antakari</h1>
             </div>
-            <div class="divider">
+            <div class="divider" id='sobremi'>
                 <h2 class="divider-titulo">SOBRE MÍ</h2>
             </div>
             <div class="sobremi-container card-tecnologias-container">
@@ -94,7 +95,7 @@
                     desafiantes e innovadoras, en un entorno agradable, de ritmo rápido y vanguardista que promueva el
                     trabajo en equipo y la integridad, fomentando el desarrollo personal y profesional.</p>
             </div>
-            <div class="divider">
+            <div class="divider" id="experiencia">
                 <h2 class="divider-titulo">EXPERIENCIA</h2>
             </div>
             <section class="card-tecnologias-container">
@@ -126,7 +127,7 @@
                 </div>
             </section>
 
-            <div class="divider">
+            <div class="divider" id="educacion">
                 <h2 class="divider-titulo">EDUCACIÓN</h2>
             </div>
             <div class="educacion-container card-tecnologias-container">
@@ -149,7 +150,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="divider">
+            <div class="divider" id="proyectos">
                 <h2 class="divider-titulo">PROYECTOS</h2>
             </div>
             <section class="proyectos">
@@ -182,7 +183,7 @@
                     </div>
                 </div>
             </section>
-            <div class="divider">
+            <div class="divider" id="tecnologias">
                 <h2 class="divider-titulo">TECNOLOGÍAS</h2>
             </div>
             <section class="card-tecnologias-container">
@@ -253,7 +254,7 @@
                 </div>
             </section>
 
-            <div class="divider">
+            <div class="divider" id="contacto">
                 <h2 class="divider-titulo">CONTACTO</h2>
             </div>
             <div class="contact card-tecnologias-container">
@@ -284,7 +285,7 @@
             </div>
         </main>
     </div>
-
+    <script type="text/javascript" src="./javascript/index.js"></script>
 </body>
 
 </html>

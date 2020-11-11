@@ -40,7 +40,8 @@ a {
   text-decoration: none;
   color: black;
   font-size: 1.3rem;
-  font-weight: 300; }
+  font-weight: 300;
+  cursor: pointer; }
 
 .container {
   width: 100vw;
@@ -50,11 +51,24 @@ a {
 .sidebar {
   height: 100vh;
   width: 15vw;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  background-color: white;
+  transition: left .3s; }
   @media only screen and (max-width: 1000px) {
     .sidebar {
-      position: absolute;
-      left: -20vw; } }
+      width: 25rem; } }
+
+@media only screen and (max-width: 1000px) {
+  .side-bar-open {
+    position: absolute;
+    left: 0;
+    top: 8rem; } }
+
+@media only screen and (max-width: 1000px) {
+  .side-bar-close {
+    position: absolute;
+    left: -25rem;
+    top: 8rem; } }
 
 .sidebar__titulo {
   color: #3a978d;
@@ -85,14 +99,6 @@ a {
 
 .sidebar__link {
   font-size: 1.6rem; }
-
-.icon-menu {
-  fill: #008073;
-  width: 4rem;
-  height: 4rem; }
-
-.icon-menu:hover {
-  left: 20vw; }
 
 .main {
   width: 85vw;
@@ -135,6 +141,9 @@ a {
   flex-direction: row;
   display: flex;
   background-color: white; }
+  @media only screen and (min-width: 1000px) {
+    .nav-fixed {
+      display: none; } }
 
 .nav-titulo-container {
   width: 100%;
@@ -176,7 +185,8 @@ a {
   padding: 2rem;
   align-items: center;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  cursor: pointer; }
 
 .link-container:hover {
   background-color: #FAFAFA;
@@ -214,7 +224,8 @@ a {
 
 /*--------------------------*/
 .link-container:hover .side-color {
-  left: 0; }
+  left: 0;
+  /* ahora estara dentro del contenedor */ }
 
 .divider {
   display: flex;
@@ -386,6 +397,14 @@ a {
 .icon-educacion {
   fill: #fb9802; }
 
+.icon-menu {
+  fill: #008073;
+  width: 4rem;
+  height: 4rem; }
+
+.icon-menu:hover .sidebar {
+  left: 0; }
+
 /* EDUCACION SECTION*/
 .educacion-container {
   display: flex;
@@ -415,7 +434,11 @@ a {
   font-weight: 300;
   padding: 3rem 2rem;
   text-decoration: none solid #333333;
-  line-height: 4.3rem; }
+  line-height: 4.3rem;
+  text-align: justify; }
+  @media only screen and (max-width: 530px) {
+    .p-sobremi {
+      font-size: 2rem; } }
 
 .sobremi-container {
   max-width: 80rem;
