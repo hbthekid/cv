@@ -5,6 +5,9 @@
     background-size: cover;
     background-position: center bottom;
     object-fit: contain;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 .hero__titulo{
     font-size: 4rem;
