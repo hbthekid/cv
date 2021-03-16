@@ -1,6 +1,16 @@
 
 let menuIsOpen = false;
 
+function closeSideBar() {
+    if( menuIsOpen ){
+        sideBar.classList.remove('side-bar-open');
+        sideBar.classList.add('side-bar-close');
+        menuIsOpen = false
+    }else{
+
+    }
+}
+
 function openMenu(){
     const sideBar = document.querySelector('#sideBar');
 
